@@ -10,7 +10,7 @@ app.set("view engine", "ejs")
 
 
 
-app.use('/index', indexRouter);
+app.use('/', indexRouter);
 
 
 
