@@ -1,16 +1,17 @@
 const express = require("express");
 const app = express();
-const indexRouter = require('./routes/index')
 
 app.set("view engine", "ejs")
 
-// app.get('/', (req,res) => {
-//     res.send('hello')
-// })
+
+const index = require('./routes/index')
+const newMsg = require('./routes/new')
 
 
 
-app.use('/', indexRouter);
+app.use('/', index);
+
+app.use('/new', newMsg);
 
 
 

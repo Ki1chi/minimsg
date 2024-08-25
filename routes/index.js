@@ -14,12 +14,10 @@ const messages = [
     }
   ];
 
-router.get('/', (req,res) => {
-    res.send("Hello world")
-})
 
-router.get('/new', (req, res) => {
-    res.send('hello from new')
+
+router.get('/', (req,res) => {
+    res.send('hello from index')
 })
 
 
