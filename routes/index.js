@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
+
 const messages = [
     {
         text: "Hi there!",
@@ -12,13 +13,13 @@ const messages = [
         user: "Charles",
         added: new Date()
     }
-  ];
+];
 
 
 
-router.get('/', (req,res) => {
-    res.send('hello from index')
-})
+router.get("/", (req, res) => {
+    res.render("index", {message: messages});
+});
 
 
 module.exports = router;
