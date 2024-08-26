@@ -6,11 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+    <div><%= title %></div>
+    <main>
     <% messages.forEach(message => { %>
-        <%= message.text %>
-        <%= message.user %>
-        <%= message.added %>
-     <% }); %>
+        <div> message:<%= message.text %> </div>
+        <div> user: <%= message.user %> </div>
+        <div> date: <%= message.added %></div>
+    <% }); %>
+    </main> 
 </body>
 </html>
 

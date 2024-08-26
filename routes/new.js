@@ -5,8 +5,11 @@ const router = express.Router();
 
 
 router.get('/', (req, res) => {
-    res.send('hello from new')
-})
+    res.render('form',)
+});
 
+router.post('/',(req, res) => {
+
+});
 
 module.exports = router;
